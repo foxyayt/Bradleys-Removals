@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Storage Glasgow | Household & Business Storage | Bradley Removals</title>
+    <meta name="description"
+        content="Secure, climate-controlled storage in Glasgow. Short and long-term storage solutions for furniture, documents, and business stock. Safe and accessible units.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --secondary: #334155;
+            --accent: #f97316;
+            --bg-light: #ffffff;
+            --bg-soft: #f8fafc;
+            --text-dark: #0f172a;
+            --text-gray: #475569;
+            --shadow: 0 4px 6px -1px rgb(0 0 0/.1), 0 2px 4px -2px rgb(0 0 0/.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0/.1), 0 4px 6px -4px rgb(0 0 0/.1)
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+            overflow-x: hidden
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Outfit', sans-serif
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e2e8f0
+        }
+
+        .top-bar {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .logo img {
+            height: 60px
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 2rem
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: .9rem;
+            color: var(--text-gray)
+        }
+
+        .main-nav {
+            background: var(--secondary);
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center
+        }
+
+        .nav-links {
+            display: flex
+        }
+
+        .nav-links a {
+            padding: 1.25rem 2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: .85rem;
+            letter-spacing: .05em
+        }
+
+        .hero {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, .4)
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 2rem
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, .5)
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: #fff
+        }
+
+        .btn-accent {
+            background: var(--accent);
+            color: #fff
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <link rel="preload" as="image" href="assets/img/hero-home.webp" fetchpriority="high">
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo.webp" alt="Bradley Removals Logo" width="180"
+                        height="60"></a>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <span>CALL US</span><br>
+                        <strong>07981 717 275</strong>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <span>EMAIL US</span><br>
+                        <strong>info@bradleysremovalsandstorage.co.uk</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="domestic-removals.html">Domestic Removals</a>
+                    <a href="commercial-removals.html">Commercial Removals</a>
+                    <a href="storage.html" class="active">Storage Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('assets/img/hero-home.webp');">
+            <div class="hero-content">
+                <h1>Secure Storage Solutions in Glasgow</h1>
+                <p>Safe, clean, and flexible storage options for your furniture, belongings, or business assets.
+                    Accessible when you need it, protected 24/7.</p>
+                <a href="contact.html" class="btn btn-accent">CHECK STORAGE AVAILABILITY</a>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="max-width" style="max-width: 1000px; margin: 0 auto;">
+                <div class="section-header">
+                    <h2>Safe & Secure Storage</h2>
+                    <p>Whether you're between house moves or just need some extra space, our storage facility is the
+                        perfect solution.</p>
+                </div>
+
+                <div class="grid">
+                    <div class="card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Secure Facility</h3>
+                        <p>24/7 CCTV monitoring and advanced alarm systems ensure your belongings are always safe.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-thermometer-half"></i>
+                        <h3>Climate Controlled</h3>
+                        <p>Our units are clean, dry, and climate-controlled to prevent damp or damage to sensitive
+                            items.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Flexible Terms</h3>
+                        <p>No long-term commitments. Store for as little as a week or as long as several years.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 4rem;">
+                    <h3>What Can You Store?</h3>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 1.5rem;">
+                        <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow);">
+                            <h4>Personal Storage</h4>
+                            <p style="margin-top: 0.5rem; color: var(--text-gray);">Ideal for furniture while
+                                renovating, seasonal items, or transitional storage during a house move. We handle the
+                                pickup and delivery too!</p>
+                        </div>
+                        <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow);">
+                            <h4>Business Storage</h4>
+                            <p style="margin-top: 0.5rem; color: var(--text-gray);">Perfect for archive documents,
+                                excess stock, or office equipment. Secure your business assets with ease.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-soft" style="padding: 5rem 2rem; background: var(--bg-soft); text-align: center;">
+            <h2>Get a Storage Price Today</h2>
+            <p style="margin-bottom: 2rem;">Flexible pricing based on your requirements.</p>
+            <a href="contact.html" class="btn btn-primary">ENQUIRE ABOUT STORAGE</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Bradley Removals</h3>
+                <p>Professional removals and storage service based in Glasgow. Trusted by hundreds of families and
+                    businesses.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="domestic-removals.html">Domestic Moves</a></li>
+                    <li><a href="commercial-removals.html">Office Relocations</a></li>
+                    <li><a href="storage.html">Storage Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> 07981 717 275</p>
+                <p><i class="fas fa-envelope"></i> info@bradleysremovalsandstorage.co.uk</p>
+                <p><i class="fas fa-map-marker-alt"></i> Glasgow, Scotland</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bradley's Removals & Storage. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
