@@ -141,7 +141,10 @@
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, .5)
+            background: rgba(0, 0, 0, 0.55);
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
         }
 
         .btn {
@@ -163,10 +166,11 @@
             color: #fff
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        media="print" onload="this.media='all'">
     <link rel="preload" as="image" href="assets/img/hero-home.webp" fetchpriority="high">
-    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="css/style.min.css">
+    </noscript>
 </head>
 
 <body>
@@ -179,14 +183,20 @@
             </div>
             <div class="contact-info">
                 <div class="contact-item">
-                    <i class="fas fa-phone"></i>
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z" />
+                    </svg>
                     <div>
                         <span>CALL US</span><br>
                         <strong>07981 717 275</strong>
                     </div>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z" />
+                    </svg>
                     <div>
                         <span>EMAIL US</span><br>
                         <strong>info@bradleysremovalsandstorage.co.uk</strong>
@@ -208,7 +218,9 @@
     </header>
 
     <main>
-        <section class="hero" style="background-image: url('assets/img/hero-home.webp');">
+        <section class="hero" style="aspect-ratio: 2 / 1;">
+            <img src="assets/img/hero-home.webp" alt="Bradley Removals Trucks" class="hero-img" fetchpriority="high"
+                loading="eager" width="1200" height="600">
             <div class="hero-content">
                 <h1>Affordable Home Removals and Storage Services in Glasgow</h1>
                 <p>BR Bradley's Removals & Storage provides domestic and commercial removals in Glasgow and the
@@ -227,7 +239,11 @@
             </div>
             <div class="grid">
                 <div class="card">
-                    <i class="fas fa-home"></i>
+                    <svg width="40" height="40" viewBox="0 0 16 16" fill="currentColor"
+                        style="color:var(--primary);margin-bottom:1.5rem;">
+                        <path
+                            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                    </svg>
                     <h3>Domestic Removals</h3>
                     <p>Stress-free home moves with expert handling of your belongings. From single items to full house
                         clearances.</p>
@@ -235,7 +251,11 @@
                         style="margin-top: 1rem; padding: 0.5rem 1rem;">Learn More</a>
                 </div>
                 <div class="card">
-                    <i class="fas fa-building"></i>
+                    <svg width="40" height="40" viewBox="0 0 16 16" fill="currentColor"
+                        style="color:var(--primary);margin-bottom:1.5rem;">
+                        <path
+                            d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm1 2h2v2H3V3zm4 0h2v2H7V3zm4 0h2v2h-2V3zM3 7h2v2H3V7zm4 0h2v2H7V7zm4 0h2v2h-2V7zm-8 4h2v2H3v-2zm4 0h2v2H7v-2zm4 0h2v2h-2v-2z" />
+                    </svg>
                     <h3>Commercial Removals</h3>
                     <p>Relocating your office or business? We provide efficient moving services to minimize your
                         downtime.</p>
@@ -243,7 +263,11 @@
                         style="margin-top: 1rem; padding: 0.5rem 1rem;">Learn More</a>
                 </div>
                 <div class="card">
-                    <i class="fas fa-warehouse"></i>
+                    <svg width="40" height="40" viewBox="0 0 16 16" fill="currentColor"
+                        style="color:var(--primary);margin-bottom:1.5rem;">
+                        <path
+                            d="M14.74 9.304l-6.5-6a.5.5 0 0 0-.74 0l-6.5 6A.5.5 0 0 0 1.26 10h1.74v4a.5.5 0 0 0 .5.5H5v-4h6v4h1.5a.5.5 0 0 0 .5-.5v-4h1.74a.5.5 0 0 0 .26-.696z" />
+                    </svg>
                     <h3>Storage Solutions</h3>
                     <p>Safe, secure, and accessible storage for short or long-term needs in our Glasgow facility.</p>
                     <a href="storage.html" class="btn btn-primary" style="margin-top: 1rem; padding: 0.5rem 1rem;">Learn
@@ -305,9 +329,18 @@
             </div>
             <div>
                 <h3>Contact Us</h3>
-                <p><i class="fas fa-phone"></i> 07981 717 275</p>
-                <p><i class="fas fa-envelope"></i> info@bradleysremovalsandstorage.co.uk</p>
-                <p><i class="fas fa-map-marker-alt"></i> Glasgow, Scotland</p>
+                <p><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="margin-right:8px;">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z" />
+                    </svg> 07981 717 275</p>
+                <p><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="margin-right:8px;">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z" />
+                    </svg> info@bradleysremovalsandstorage.co.uk</p>
+                <p><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="margin-right:8px;">
+                        <path
+                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg> Glasgow, Scotland</p>
             </div>
         </div>
         <div class="footer-bottom">

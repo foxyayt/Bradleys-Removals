@@ -141,7 +141,10 @@
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, .5)
+            background: rgba(0, 0, 0, 0.55);
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
         }
 
         .btn {
@@ -163,10 +166,11 @@
             color: #fff
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        media="print" onload="this.media='all'">
     <link rel="preload" as="image" href="assets/img/hero-commercial.webp" fetchpriority="high">
-    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="css/style.min.css">
+    </noscript>
 </head>
 
 <body>
@@ -179,14 +183,20 @@
             </div>
             <div class="contact-info">
                 <div class="contact-item">
-                    <i class="fas fa-phone"></i>
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z" />
+                    </svg>
                     <div>
                         <span>CALL US</span><br>
                         <strong>07981 717 275</strong>
                     </div>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z" />
+                    </svg>
                     <div>
                         <span>EMAIL US</span><br>
                         <strong>info@bradleysremovalsandstorage.co.uk</strong>
@@ -208,7 +218,9 @@
     </header>
 
     <main>
-        <section class="hero" style="background-image: url('assets/img/hero-commercial.webp');">
+        <section class="hero" style="aspect-ratio: 2 / 1;">
+            <img src="assets/img/hero-commercial.webp" alt="Office Moving Experts" class="hero-img" fetchpriority="high"
+                loading="eager" width="1200" height="600">
             <div class="hero-content">
                 <h1>Business & Office Relocations in Glasgow</h1>
                 <p>Minimize downtime and maximize efficiency with our professional commercial moving services. Expertise
@@ -227,17 +239,31 @@
 
                 <div class="grid">
                     <div class="card">
-                        <i class="fas fa-chair"></i>
+                        <svg width="40" height="40" viewBox="0 0 16 16" fill="currentColor"
+                            style="color:var(--primary);margin-bottom:1.5rem;">
+                            <path
+                                d="M0 12.5a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5V11a.5.5 0 0 0-.5-.5H.5a.5.5 0 0 0-.5.5v1.5zM15 12H1v-.5h14v.5zM2 3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3zm1 0v1h10V3H3z" />
+                        </svg>
                         <h3>Office Furniture</h3>
                         <p>Dismantling, moving, and reassembling office workstations and furniture with care.</p>
                     </div>
                     <div class="card">
-                        <i class="fas fa-microchip"></i>
+                        <svg width="40" height="40" viewBox="0 0 16 16" fill="currentColor"
+                            style="color:var(--primary);margin-bottom:1.5rem;">
+                            <path
+                                d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zm1 1v10h1V3h-1zM2 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2zm1 1v10h1V3H3zm3.5 1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v2z" />
+                        </svg>
                         <h3>IT & Equipment</h3>
                         <p>Specialist handling of sensitive IT equipment, servers, and electronic peripherals.</p>
                     </div>
                     <div class="card">
-                        <i class="fas fa-calendar-alt"></i>
+                        <svg width="40" height="40" viewBox="0 0 16 16" fill="currentColor"
+                            style="color:var(--primary);margin-bottom:1.5rem;">
+                            <path
+                                d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                        </svg>
                         <h3>After-Hours Moves</h3>
                         <p>We offer weekend and evening moves to ensure zero interruption to your business operations.
                         </p>
@@ -253,16 +279,31 @@
                                 trained in current health and safety standards to ensure a compliant and safe move for
                                 your staff and assets.</p>
                             <ul style="margin-top: 1rem;">
-                                <li><i class="fas fa-check" style="color:var(--primary); margin-right:10px;"></i>
+                                <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                        style="color:var(--primary); margin-right:10px;">
+                                        <path
+                                            d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.42-6.446a.24.24 0 0 0-.002-.001z" />
+                                    </svg>
                                     Detailed move planning</li>
-                                <li><i class="fas fa-check" style="color:var(--primary); margin-right:10px;"></i>
+                                <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                        style="color:var(--primary); margin-right:10px;">
+                                        <path
+                                            d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.42-6.446a.24.24 0 0 0-.002-.001z" />
+                                    </svg>
                                     Labeling and asset tracking</li>
-                                <li><i class="fas fa-check" style="color:var(--primary); margin-right:10px;"></i> Secure
+                                <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                        style="color:var(--primary); margin-right:10px;">
+                                        <path
+                                            d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.42-6.446a.24.24 0 0 0-.002-.001z" />
+                                    </svg> Secure
                                     document transport</li>
                             </ul>
                         </div>
                         <div style="flex: 1; text-align: center;">
-                            <i class="fas fa-briefcase" style="font-size: 8rem; color: #cbd5e1;"></i>
+                            <svg width="80" height="80" viewBox="0 0 16 16" fill="currentColor" style="color: #cbd5e1;">
+                                <path
+                                    d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -296,9 +337,18 @@
             </div>
             <div>
                 <h3>Contact Us</h3>
-                <p><i class="fas fa-phone"></i> 07981 717 275</p>
-                <p><i class="fas fa-envelope"></i> info@bradleysremovalsandstorage.co.uk</p>
-                <p><i class="fas fa-map-marker-alt"></i> Glasgow, Scotland</p>
+                <p><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="margin-right:8px;">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z" />
+                    </svg> 07981 717 275</p>
+                <p><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="margin-right:8px;">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z" />
+                    </svg> info@bradleysremovalsandstorage.co.uk</p>
+                <p><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="margin-right:8px;">
+                        <path
+                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg> Glasgow, Scotland</p>
             </div>
         </div>
         <div class="footer-bottom">
